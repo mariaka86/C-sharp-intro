@@ -7,8 +7,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
         static void Main(string[] args)
             
         {
-            int = "Not a number will cause error"
-            Console.WriteLine("Hello World!");
+            int number = 64;
+            Console.WriteLine("Hello World!{0} is a number or whatever",number);
         }
     }
 }
