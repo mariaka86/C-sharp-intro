@@ -25,6 +25,15 @@ namespace MyApp // Note: actual namespace depends on the project name.
             // converting input into an integer/ number 
             try {
                 int favNumber = Convert.ToInt32(input);
+
+                if(favNumber == 4)
+                {
+                    throw new ApplicationException("Hey quick interruption, that's my favorite on too");
+                }
+                // make sure to use 5.0 not 5
+                double favNumDividedByFive = 5.0 / favNumber;
+
+                Console.WriteLine("Five Divided by {0} = {1}", favNumber, favNumDividedByFive);
             }
             catch(FormatException)
             {
